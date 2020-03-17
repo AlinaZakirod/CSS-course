@@ -18,5 +18,9 @@
   "homepage": "https://github.com/AlinaZakirod/CSS-course#readme",
   "devDependencies": {
     "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "live": "^0.1.25-beta.0",
+    "server": "^1.0.27"
   }
 }
