@@ -9,5 +9,10 @@
 
 @import "components/button";
 
+@import "layout/grid";
 @import "layout/header";
+
 @import "pages/home";
+
+//also should have vendors and themes folder
+// this would work for larger projects
