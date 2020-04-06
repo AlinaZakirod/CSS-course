@@ -11,7 +11,7 @@
     position: fixed;
     top: 6rem;
     right: 6rem;
-    z-index: 1002;
+    z-index: 2000;
   }
 
   &__background {
@@ -26,6 +26,8 @@
       $color-primary-dark
     );
     z-index: 1000;
+
+    transform: scale(90);
   }
 
   &__nav {
@@ -34,7 +36,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1001;
+    z-index: 1500;
   }
 
   &__list {
@@ -42,11 +44,44 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
   }
 
   &__item {
+    margin: 1rem;
   }
 
   &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%
+      );
+      background-size: 220%;
+      transition: all 0.4s;
+
+      span {
+        margin-right: 1rem;
+        display: inline-block;
+      }
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+      transform: translateX(1rem);
+    }
   }
 }
